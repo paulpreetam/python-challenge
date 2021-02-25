@@ -12,7 +12,7 @@ greatest_month_increase = 0
 greatest_decrease = 0
 greatest_month_decrease = 0
 
-csvpath = os.path.join('Resources', 'budget_data.csv')
+csvpath = os.path.join('..',  'resources', 'budget_data.csv')
 
 with open(csvpath, newline='') as csvfile:
 
@@ -60,7 +60,7 @@ print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits:, {greatest_month_increase}, (${highest})")
 print(f"Greatest Decrease in Profits:, {greatest_month_decrease}, (${lowest})")
 
-output_file = os.path.join('analysis', 'Financial_Analysis.text')
+output_file = os.path.join('..', 'analysis', 'Financial_Analysis.text')
 with open(output_file, 'w',) as txtfile:
    txtfile.write(f"Financial Analysis\n")
    txtfile.write(f"----------------------------\n")
